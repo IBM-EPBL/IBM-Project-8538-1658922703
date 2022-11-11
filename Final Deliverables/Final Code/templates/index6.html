@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <title>Handwritten Digit Recognition</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/recog">Recognize</a></li>
+      </ul>
+    </nav>
+    <section class="content">
+      <center>
+        <form
+          action="/recog"
+          method="POST"
+          id="img_form"
+          enctype="multipart/form-data"
+        >
+          <input
+            type="file"
+            name="img"
+            onchange="clean_res()"
+            id="in_image"
+            class="input"
+          />
+          <label class="inline" for="in_image"> <span class="btn">Choose</span></label>
+          <section id="preview">THIS IS THE PREVIEW</section>
+          <input type="button" class="btn hide" id="remove" value="X" title="Remove Image"/>
+          <input type="submit" id="sub" class="btn" value="Recognize" />
+        </form>
+        <section id="prediction">
+          <div class="res" id="res_box"></div>
+        </section>
+      </center>
+    </section>
+  </body>
+  <script
+    language="JavaScript"
+    type="text/javascript"
+    src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"
+  ></script>
+  <script
+    language="javascript"
+    type="text/javascript"
+    src="../static/js/fn.js"
+  ></script>
+</html>

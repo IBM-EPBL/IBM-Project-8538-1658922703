@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+body {
+  background: url("../image/bg.png") no-repeat;
+  background-size: cover;
+}
+nav {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0, 0.7);
+}
+nav ul {
+  color: rgb(255, 255, 255);
+  list-style: none;
+  display: flex;
+}
+
+nav a {
+  padding: 12px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+nav a:hover {
+  transition: all 0.3s;
+  background-color: white;
+  color: black;
+}
+
+.des {
+  background-color: rgb(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  margin: 15% 10%;
+  padding: 18px 16px;
+}
+
+.content {
+  background-color: rgb(0, 0, 0, 0.6);
+  padding: 40px;
+  margin: 9% 15%;
+}
+.input {
+  display: none;
+}
+
+.inline {
+  display: inline;
+}
+.btn {
+  width: fit-content;
+  font-size: 20px;
+  cursor: pointer;
+  border: 0;
+  margin: 50px;
+  display: block;
+  padding: 10px 16px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+  caret-color: transparent;
+}
+.btn:nth-child(1) {
+  background-color: cornflowerblue;
+  color: white;
+}
+.btn:hover {
+  transition: all 0.15s;
+  transform: scale(1.05, 1.05) translateY(-4px);
+  box-shadow: 4px 4px 10px rgb(0, 0, 0);
+}
+
+#preview {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=image);
+  width: fit-content;
+  display: none;
+}
+.hide {
+  margin: 0;
+  display: none;
+  background-color: rgb(163, 53, 53);
+  color: white;
+}
+
+#prediction {
+  margin-top: 5%;
+}
+#res_box {
+  color: white;
+}
+#res_box {
+  font-size: 24px;
+  border-radius: 2%;
+  width: fit-content;
+  padding: 15px 23px;
+  background-color: rgba(0, 0, 0);
+}
